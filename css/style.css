@@ -248,6 +248,7 @@ textarea {
 .FAQ_Heading{
   text-align: center;
   font-size: 60px;
+  font-family: SansSerif;
 }
 
 .FAQ_Paragraph{
@@ -255,6 +256,7 @@ textarea {
   font-size: 20px;
   padding-right: 15%;
   padding-left: 15%;
+  padding-bottom: 5%;
   font-family: "Roboto Light";
 }
 
@@ -262,19 +264,47 @@ textarea {
   border: 4px solid #222222;
   overflow: hidden;
   padding-bottom:1% ;
+  border-radius: 25px;
 
+}
+
+.FAQ_Category_Title_left{
+  text-align: center;
+  width: 45%;
+  float:left;
+  padding: 1%;
+  margin-top: 1%;
+  margin-left: 1%;
+  font-family: "SansSerif";
+  color:Black;
+  font-size: xx-large;
+
+}
+
+.FAQ_Category_Title_right{
+  text-align: center;
+  width: 45%;
+  float:right;
+  padding: 1%;
+  margin-top: 1%;
+  margin-left: 1%;
+  font-family: "SansSerif";
+  color:Black;
+  font-size: xx-large;
 }
 
 .FAQ_Box_Left{
   border: 3px solid #222222;
-  width:45%;
+  width: 45%;
   float:left;
   background:lightgreen;
   padding: 1%;
-  margin-top: 1%;
+  margin-top:1%;
   margin-left: 1%;
   font-family: "Roboto Light";
   color:Black;
+  border-radius: 25px;
+
 }
 
 .FAQ_Box_Right{
@@ -284,15 +314,30 @@ textarea {
   background:lightgreen;
   padding: 1%;
   margin-top:1%;
-  text-align: left;
+  margin-left: 1%;
   font-family: "Roboto Light";
   color:Black;
-  margin-right:1%;
+  border-radius: 25px;
+
 }
+
+
+.FAQ_Legal_Text{
+  text-align: center;
+  font-family: "Roboto Light";
+}
+
+
+<!--Buttons and that -->
 
 .FAQ_btn_Expand{
   background:white;
   border:none;
   font-size: medium;
   margin-right: 1%;
+}
+
+.FAQ_btn_Expand:hover {
+  background-color: green;
+
 }
