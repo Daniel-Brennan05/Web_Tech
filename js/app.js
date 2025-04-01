@@ -1,6 +1,7 @@
-function toggleVisibility(ids, containerId, event) {
+function toggleVisibility(ids, containerId, TextId, event) {
   let container = document.getElementById(containerId);
   let allHidden = ids.every(id => document.getElementById(id).style.display === "none");
+  let text = document.getElementById(TextId);
 
   const originalHeight = container.offsetHeight;
   container.style.height = (originalHeight - 4) + "px";
@@ -28,12 +29,16 @@ function toggleVisibility(ids, containerId, event) {
       currentContainer.style.height = "";
       currentContainer.style.transition = "";
       currentContainer.dataset.expanded = "false"; // Mark as collapsed
+      text.style.visibility = "hidden";
+      text.style.margin = "-100%";
     } else {
       // **Expand**
       currentContainer.style.width = "90%";
       currentContainer.style.height = "90%";
       currentContainer.style.transition = "all 1.0s ease";
       currentContainer.dataset.expanded = "true"; // Mark as expanded
+      text.style.visibility = "visible";
+      text.style.margin = "0%";
     }
   }
 }
@@ -43,9 +48,10 @@ function toggleVisibility(ids, containerId, event) {
 //====================================RIGHT HAND SIDE===================================\\
 //======================================================================================\\
 
-function toggleVisibilityLeft(ids, containerId, event) {
+function toggleVisibilityLeft(ids, containerId, TextId, event) {
   let container = document.getElementById(containerId);
   let allHidden = ids.every(id => document.getElementById(id).style.display === "none");
+  let text = document.getElementById(TextId);
 
   const originalHeight = container.offsetHeight;
   container.style.height = (originalHeight - 4) + "px";
@@ -73,12 +79,17 @@ function toggleVisibilityLeft(ids, containerId, event) {
       leftcurrentContainer.style.height = "";
       leftcurrentContainer.style.transition = "";
       leftcurrentContainer.dataset.expanded = "false"; // Mark as collapsed
+      text.style.visibility = "hidden";
+      text.style.margin = "-100%";
+
     } else {
       // **Expand**
       leftcurrentContainer.style.width = "90%";
       leftcurrentContainer.style.height = "90%";
       leftcurrentContainer.style.transition = "all 2.0s ease";
       leftcurrentContainer.dataset.expanded = "true"; // Mark as expanded
+      text.style.visibility = "visible";
+      text.style.margin = "0%";
     }
   }
 }

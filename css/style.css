@@ -332,6 +332,21 @@ textarea {
   font-family: "Roboto Light";
 }
 
+.TextHiddenLeft{
+  visibility: visible;
+  margin: -100%;
+  float: left;
+  font-family: "Roboto Light";
+}
+
+.TextHiddenRight{
+  visibility: visible;
+  margin: -100%;
+  float: left;
+  font-family: "Roboto Light";
+}
+
+
 
 <!--Buttons and that -->
 
