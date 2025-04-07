@@ -11,7 +11,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+html{
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -256,8 +256,9 @@ textarea {
   font-size: 20px;
   padding-right: 15%;
   padding-left: 15%;
-  padding-bottom: 5%;
   font-family: "Roboto Light";
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .FAQ_Container_Big{
@@ -265,7 +266,6 @@ textarea {
   overflow: hidden;
   padding-bottom:1% ;
   border-radius: 25px;
-
 }
 
 .FAQ_Category_Title_left{
@@ -278,7 +278,6 @@ textarea {
   font-family: "SansSerif";
   color:Black;
   font-size: xx-large;
-
 }
 
 .FAQ_Category_Title_right{
@@ -333,14 +332,14 @@ textarea {
 }
 
 .TextHiddenLeft{
-  visibility: visible;
+  visibility: hidden;
   margin: -100%;
   float: left;
   font-family: "Roboto Light";
 }
 
 .TextHiddenRight{
-  visibility: visible;
+  visibility: hidden;
   margin: -100%;
   float: left;
   font-family: "Roboto Light";
@@ -350,23 +349,34 @@ textarea {
 
 <!--Buttons and that -->
 
-.FAQ_btn_Expand{
-  background:white;
-  border:none;
-  font-size: medium;
-  margin-right: 1%;
+.FAQ_btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.FAQ_btn:hover{
+  background-color: #3e8e41
+}
+
+.FAQ_btn:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 #FAQ_Box_Closed_Left_2 {
   display:none;
   position:fixed;
   height:0px;
-  -webkit-transition:height 0.5s;
-  transition:height 0.5s;
-  -o-transition:height 0.5s;
-  -moz-transition:height 0.5s;
 }
 
-.FAQ_btn_Expand:hover {
-  background-color: green;
 
-}
