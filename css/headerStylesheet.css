@@ -1,6 +1,7 @@
 .navigation{
   list-style: none;
-  margin: 0;
+  margin-left: -10%;
+  margin-right: -10%;
   background: #FFC300;
   display: flex;
   flex-direction: row;
@@ -14,6 +15,7 @@
   text-decoration: none;
   color: black;
   font-size: 100%;
+
 }
 
 .pageTitle{

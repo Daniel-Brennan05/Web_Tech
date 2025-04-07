@@ -245,6 +245,11 @@ textarea {
   }
 }
 
+.bodyFAQ{
+
+}
+
+
 .FAQ_Heading{
   text-align: center;
   font-size: 60px;
@@ -378,5 +383,4 @@ textarea {
   position:fixed;
   height:0px;
 }
-
 
