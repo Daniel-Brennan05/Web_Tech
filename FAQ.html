@@ -29,7 +29,7 @@
   <h1 class="pageTitle">Frequently Asked Questions</h1>
 
   <ul class="navigation">
-    <li><a href="#">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="#">About Us</a></li>
     <li><a href="#">Local Info</a></li>
     <li><a href="FAQ.html">FAQ</a></li>
@@ -38,7 +38,7 @@
 
 <!--Everything below this is under the header and is the main site content-->
 <body class="bodyFAQ">
-
+<div class="bellowHeader">
 <!--Opening paragraph-->
   <p class ="FAQ_Paragraph">Hey there! If you have any questions or need more
     information, feel free to reach out! Whether you're curious about how the
@@ -65,68 +65,73 @@
       <!--Box 1 -->
 
      <div class="FAQ_Question_Container_left" id="Web_Q1">
-       <p>
-         <button class="FAQ_btn" onclick="toggleVisibilityLeft(['Web_Q2','Web_Q3','Web_Q4','Web_Q5','Web_Q6'], 'WebsiteQ_Id','LeftHidden1', event)">
+       <p class="FAQ_questionTitle">
+         <button onclick="toggleVisibilityLeft(['Web_Q2','Web_Q3','Web_Q4','Web_Q5','Web_Q6'], 'WebsiteQ_Id','LeftHidden1', event)" class="FAQ_btn">
            Open/Close
-         </button> words
+         </button> Where can I find the schedule for upcoming quiz nights?
        </p>
-       <p class="TextHiddenLeft" id="LeftHidden1">Text Text Text TextText TextText TextText Text</p>
+       <p class="TextHiddenLeft" id="LeftHidden1">The schedule for upcoming quizzes can be found in the quiz selection
+       page along with quizzes you can do online.</p>
      </div>
 
      <!--Box 2 -->
 
      <div class="FAQ_Question_Container_left"  id="Web_Q2">
-       <p>
+       <p class="FAQ_questionTitle">
          <button class="FAQ_btn"  onclick="toggleVisibilityLeft(['Web_Q1','Web_Q3','Web_Q4','Web_Q5','Web_Q6'], 'WebsiteQ_Id','LeftHidden2', event)">
            Open/Close
-         </button> words
+         </button> Is the website mobile-friendly?
        </p>
-       <p class="TextHiddenLeft" id="LeftHidden2">Text Text Text TextText TextText TextText Text</p>
+       <p class="TextHiddenLeft" id="LeftHidden2">Yes! This website was designed with mobile users
+       in mind and is therefore usable on all devices.</p>
      </div>
 
      <!--Box 3 -->
 
      <div class="FAQ_Question_Container_left" id="Web_Q3">
-       <p>
+       <p class="FAQ_questionTitle">
          <button class="FAQ_btn"  onclick="toggleVisibilityLeft(['Web_Q2','Web_Q1','Web_Q4','Web_Q5','Web_Q6'], 'WebsiteQ_Id','LeftHidden3', event)">
            Open/Close
-         </button> words
+         </button> Can I view past quiz questions or results on the site?
        </p>
-       <p class="TextHiddenLeft" id="LeftHidden3">Text Text Text TextText TextText TextText Text</p>
+       <p class="TextHiddenLeft" id="LeftHidden3">All online quizzes will display answers upon completion.
+       However, answers to in person quizzes will unfortunately not be accessible online.</p>
      </div>
 
      <!--Box 4 -->
 
      <div class="FAQ_Question_Container_left" id="Web_Q4">
-       <p>
+       <p class="FAQ_questionTitle">
          <button class="FAQ_btn" onclick="toggleVisibilityLeft(['Web_Q2','Web_Q3','Web_Q1','Web_Q5','Web_Q6'], 'WebsiteQ_Id','LeftHidden4', event)">
            Open/Close
-         </button> words
+         </button> Do I need to create an account to use the website?
        </p>
-       <p class="TextHiddenLeft" id="LeftHidden4">Text Text Text TextText TextText TextText Text</p>
+       <p class="TextHiddenLeft" id="LeftHidden4">Nope! All features on the website are accessible without
+       the need to create an account.</p>
 
      </div>
 
      <!--Box 5 -->
 
      <div class="FAQ_Question_Container_left" class="FAQ_btn"  id="Web_Q5">
-       <p>
+       <p class="FAQ_questionTitle">
          <button onclick="toggleVisibilityLeft(['Web_Q2','Web_Q3','Web_Q4','Web_Q1','Web_Q6'], 'WebsiteQ_Id','LeftHidden5', event)">
            Open/Close
-         </button> words
+         </button> Does the website list other events hosted at pubs outside Edinburgh?
        </p>
-       <p class="TextHiddenLeft" class="FAQ_btn"  id="LeftHidden5">Text Text Text TextText TextText TextText Text</p>
+       <p class="TextHiddenLeft" class="FAQ_btn"  id="LeftHidden5">Unfortunately not. This
+       website is only specifically for Edinburgh Pub nights.</p>
      </div>
 
      <!--Box 6 -->
 
      <div class="FAQ_Question_Container_left" class="FAQ_btn"  id="Web_Q6">
-       <p>
+       <p class="FAQ_questionTitle">
          <button onclick="toggleVisibilityLeft(['Web_Q2','Web_Q3','Web_Q4','Web_Q5','Web_Q1'], 'WebsiteQ_Id','LeftHidden6', event)">
            Open/Close
-         </button> words
+         </button> Does this site comply with GDPR regulations?
        </p>
-       <p class="TextHiddenLeft" id="LeftHidden6">Text Text Text TextText TextText TextText Text</p>
+       <p class="TextHiddenLeft" id="LeftHidden6">Who is GDPR? Never heard of them sorry.</p>
      </div>
      </div>
 
@@ -145,72 +150,89 @@
       <!--Box 1-->
 
       <div class="FAQ_Question_Container_right" id="Pub_Q1">
-        <p>
+        <p class="FAQ_questionTitle">
           <button class="FAQ_btn"  onclick="toggleVisibility(['Pub_Q2','Pub_Q3','Pub_Q4','Pub_Q5','Pub_Q6'], 'Pub_Quiz_Id','RightHidden1', event)">
             Open/Close
-          </button> words
+          </button> What kind of topics are usually covered in a pub quiz?
         </p>
-        <p class="TextHiddenRight" id="RightHidden1">Text Text Text TextText TextText TextText Text</p>
+        <p class="TextHiddenRight" id="RightHidden1">Our pub quiz covers a wide range of
+          topics to keep things fresh and fun! You can expect questions on general
+          knowledge, pop culture, music, film, history, geography, science, sport,
+          and sometimes a quirky themed round or two. We like to keep you
+          guessing—literally!</p>
       </div>
 
       <!--Box 2-->
 
       <div class="FAQ_Question_Container_right"  id="Pub_Q2">
-        <p>
+        <p class="FAQ_questionTitle">
           <button class="FAQ_btn"  onclick="toggleVisibility(['Pub_Q1','Pub_Q3','Pub_Q4','Pub_Q5','Pub_Q6'], 'Pub_Quiz_Id','RightHidden2', event)">
             Open/Close
-          </button> words
+          </button> How many people can be on a team?
         </p>
-        <p class="TextHiddenRight" id="RightHidden2">Text Text Text TextText TextText TextText Text</p>
+        <p class="TextHiddenRight" id="RightHidden2">Teams can have up to 6 players.
+          If you’ve got a larger group, feel free to split into smaller teams and get
+          a little friendly competition going. Solo players and smaller groups are
+          always welcome—we might even help match you up with others if you’re feeling
+          social.</p>
       </div>
 
       <!--Box 3-->
 
       <div class="FAQ_Question_Container_right" id="Pub_Q3">
-        <p>
+        <p class="FAQ_questionTitle">
           <button class="FAQ_btn"  onclick="toggleVisibility(['Pub_Q2','Pub_Q1','Pub_Q4','Pub_Q5','Pub_Q6'], 'Pub_Quiz_Id','RightHidden3', event)">
             Open/Close
-          </button> words
+          </button> Is there a fee to enter the quizzes?
         </p>
-        <p class="TextHiddenRight" class="FAQ_btn" id="RightHidden3">Text Text Text TextText TextText TextText Text</p>
+        <p class="TextHiddenRight" class="FAQ_btn" id="RightHidden3">Yes, there’s a small entry fee of £2 per person, which goes toward the prize pot and keeping the quiz night running. Occasionally, we host special themed quizzes or charity nights, so pricing may vary slightly—check our socials or
+          the event listing for details.</p>
       </div>
 
       <!--Box 4-->
 
       <div class="FAQ_Question_Container_right" id="Pub_Q4">
-        <p>
+        <p class="FAQ_questionTitle">
           <button class="FAQ_btn" onclick="toggleVisibility(['Pub_Q2','Pub_Q3','Pub_Q1','Pub_Q5','Pub_Q6'], 'Pub_Quiz_Id','RightHidden4', event)">
             Open/Close
-          </button> words
+          </button> What are the prizes for the winning team?
         </p>
-        <p class="TextHiddenRight" id="RightHidden4">Text Text Text TextText TextText TextText Text</p>
+        <p class="TextHiddenRight" id="RightHidden4">Our winning team usually takes home a cash prize, but we often throw in bonus goodies like drinks vouchers, bar tabs, or even quirky themed prizes. There’s also sometimes a booby prize for the team that comes in
+          last—because everyone deserves a little something!</p>
       </div>
 
       <!--Box 5-->
 
       <div class="FAQ_Question_Container_right" id="Pub_Q5">
-        <p>
+        <p class="FAQ_questionTitle">
           <button class="FAQ_btn" onclick="toggleVisibility(['Pub_Q2','Pub_Q3','Pub_Q4','Pub_Q1','Pub_Q6'], 'Pub_Quiz_Id','RightHidden5', event)">
             Open/Close
-          </button> words
+          </button> How long does the quiz usually last?
         </p>
-        <p class="TextHiddenRight" id="RightHidden5">Text Text Text TextText TextText TextText Text</p>
+        <p class="TextHiddenRight" id="RightHidden5">The quiz typically runs for about 2
+          hours, including a short break halfway through. Quizzes usually  start at 8 PM sharp,
+          so be sure to arrive a little early to grab a drink and get settled!</p>
       </div>
 
       <!--Box 6-->
 
       <div class="FAQ_Question_Container_right" id="Pub_Q6">
-        <p>
+        <p class="FAQ_questionTitle">
           <button class="FAQ_btn"  onclick="toggleVisibility(['Pub_Q2','Pub_Q3','Pub_Q4','Pub_Q5','Pub_Q1'], 'Pub_Quiz_Id','RightHidden6', event)">
             Open/Close
-          </button> words
+          </button> Do we need to book a table in advance, or can we just show up?
         </p>
-        <p class="TextHiddenRight" id="RightHidden6">Text Text Text TextText TextText TextText Text</p>
+        <p class="TextHiddenRight" id="RightHidden6">We highly recommend booking in advance,
+          especially if you’re coming with a group. Quiz nights can get busy, and we don’t
+          want anyone to miss out! Walk-ins are welcome if there’s space, but booking
+          guarantees your spot. You can reserve a table by calling us or using our online
+          booking form.</p>
       </div>
 
     </div>
 
   </div>
+</div>
 </body>
 
 <!--Main page content ends here and footer starts-->

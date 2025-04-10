@@ -4,7 +4,7 @@ function toggleVisibility(ids, containerId, TextId, event) {
   let text = document.getElementById(TextId);
 
   const originalHeight = container.offsetHeight;
-  container.style.height = (originalHeight - 4) + "px";
+  container.style.height = (originalHeight) + "px";
 
   ids.forEach(id => {
     let element = document.getElementById(id);
@@ -27,7 +27,6 @@ function toggleVisibility(ids, containerId, TextId, event) {
       // **Revert to original styles**
       currentContainer.style.width = "";
       currentContainer.style.height = "";
-      currentContainer.style.transition = "";
       currentContainer.dataset.expanded = "false"; // Mark as collapsed
       text.style.visibility = "hidden";
       text.style.margin = "-100%";
@@ -35,7 +34,6 @@ function toggleVisibility(ids, containerId, TextId, event) {
       // **Expand**
       currentContainer.style.width = "90%";
       currentContainer.style.height = "90%";
-      currentContainer.style.transition = "all 1.0s ease";
       currentContainer.dataset.expanded = "true"; // Mark as expanded
       text.style.visibility = "visible";
       text.style.margin = "0%";
@@ -54,7 +52,7 @@ function toggleVisibilityLeft(ids, containerId, TextId, event) {
   let text = document.getElementById(TextId);
 
   const originalHeight = container.offsetHeight;
-  container.style.height = (originalHeight - 4) + "px";
+  container.style.height = (originalHeight) + "px";
 
   ids.forEach(id => {
     let element = document.getElementById(id);
@@ -77,7 +75,6 @@ function toggleVisibilityLeft(ids, containerId, TextId, event) {
       // **Revert to original styles**
       leftcurrentContainer.style.width = "";
       leftcurrentContainer.style.height = "";
-      leftcurrentContainer.style.transition = "";
       leftcurrentContainer.dataset.expanded = "false"; // Mark as collapsed
       text.style.visibility = "hidden";
       text.style.margin = "-100%";
@@ -86,7 +83,6 @@ function toggleVisibilityLeft(ids, containerId, TextId, event) {
       // **Expand**
       leftcurrentContainer.style.width = "90%";
       leftcurrentContainer.style.height = "90%";
-      leftcurrentContainer.style.transition = "all 2.0s ease";
       leftcurrentContainer.dataset.expanded = "true"; // Mark as expanded
       text.style.visibility = "visible";
       text.style.margin = "0%";
