@@ -1,0 +1,37 @@
+.team-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+	
+.team-member {
+  text-align: center;
+  font-size: 18px;
+  max-width: 200px;
+}
+		
+.team-member img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+	
+.member-name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+	
+.about-us p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+	
+.intro {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
