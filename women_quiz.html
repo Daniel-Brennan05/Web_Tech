@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iconic Women Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="main">
+  <header>
+    <img src="Logo1_no_background.png" alt="Logo" class="Logo">
+    <h1 class="pageTitle">Iconic Women Quiz</h1>
+
+    <ul class="navigation">
+      <li><a href="#">Home</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="#">Local Info</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+  </header>
+
+  <main>
+	<link rel="stylesheet" href="women_quiz.css">
+    <img src="women_pic.png" alt="Quiz Banner" class="quiz-image">
+
+    <div class="quiz-section">
+      <p><strong>1.</strong> Which woman is often known as the ‘First Computer Programmer’?</p>
+      <p><strong>2.</strong> Marie Curie is the only individual to win two Nobel Prizes in two different science categories. In which year did she win her first?</p>
+      <p><strong>3.</strong> The scientist Rosalind Franklin is best known for her work on what topic?</p>
+      <p><strong>4.</strong> What is the name of the first African-American woman to play at Wimbledon?</p>
+      <p><strong>5.</strong> Sandra Day O’Connor was the first woman appointed to the US Senate. Who was the second?</p>
+      <p><strong>6.</strong> Junko Tabei was the first woman to reach the summit of which mountain?</p>
+      <p><strong>7.</strong> Who was the first American woman to travel to space?</p>
+      <p><strong>8.</strong> Amelia Earhart was the first woman to fly solo across which ocean?</p>
+      <p><strong>9.</strong> Which iconic woman is also known as ‘The Lady with the lamp’?</p>
+      <p><strong>10.</strong> Emmeline Pankhurst was a founding member of which historical group?</p>
+    </div>
+
+    <div class="center-container">
+      <button class="button" onclick="showMessage()">Answers</button>
+    </div>
+  </main>
+
+  <script>
+    function showMessage() {
+      alert(
+        "Quiz Answers:\n\n" +
+        "1. Ada Lovelace\n" +
+        "2. 1903\n" +
+        "3. DNA structure\n" +
+        "4. Althea Gibson\n" +
+        "5. Ruth Bader Ginsburg\n" +
+        "6. Mount Everest\n" +
+        "7. Sally Ride\n" +
+        "8. Atlantic Ocean\n" +
+        "9. Florence Nightingale\n" +
+        "10. The Suffragettes"
+      );
+    }
+  </script>
+</body>
+</html>
