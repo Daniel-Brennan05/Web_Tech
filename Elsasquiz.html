@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Home</title>
+	  <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="elsasstyle.css">
+	</head>
+
+	<body class="dog-quiz-bg">
+		<div class="wrapper">
+		  <ul class="navigation">
+			<li><a href="home.html">Home</a></li>
+		<li><a href="about_us.html">About Us</a></li>
+		<li><a href="#">Local Info</a></li>
+		<li><a href="FAQ.html">FAQ</a></li>
+		  </ul>
+		  <header>
+			<img src="Logo1_no_background.png" alt="Image" class="Logo">
+			<h1 class="pageTitle">Dog Breeds</h1>
+		  </header>
+	  
+		  <!-- ONLY the quiz section has the background image! -->
+		  <div class="quiz-bg-area">
+			<div class="quiz-container">
+			  <h2>How well do you know the UK's favourite pet?</h2>
+			  <ol id="questions">
+				<li class="question">Which breed is known as the fastest dog breed?</li>
+				<li class="question">Which dog breed has a distinctive black tongue?</li>
+				<li class="question">Which dog breed is the smallest in the world?</li>
+				<li class="question">Which famous breed is known for its spots?</li>
+				<li class="question">Which breed is considered the "king of terriers"?</li>
+			  </ol>
+			  <button type="button" class="reveal-btn" id="revealBtn">Reveal Answers</button>
+			  <ol class="answers-list" id="answers">
+				<li><strong>Greyhound</strong></li>
+				<li><strong>Chow Chow</strong></li>
+				<li><strong>Chihuahua</strong></li>
+				<li><strong>Dalmatian</strong></li>
+				<li><strong>Airedale Terrier</strong></li>
+			  </ol>
+			</div>
+		  </div>
+		  <script>
+			document.getElementById('revealBtn').onclick = function() {
+			  document.getElementById('answers').style.display = "block";
+			  this.disabled = true;
+			  this.innerText = "Answers Revealed";
+			};
+		  </script>
+		</div>
+	  </body>
+	  </html>
