@@ -16,7 +16,7 @@
 }
 
 .FAQ_Container_Big{
-  border: 4px solid #222222;
+  border: 0px solid #222222;
   overflow: hidden;
   padding-bottom:1% ;
   border-radius: 25px;
@@ -115,20 +115,21 @@
 }
 
 
-
-<!--Buttons and that -->
-
-.FAQ_btn{
-  font-size: 24px;
+.FAQ_btn {
+  all: unset;
+  display: inline-block;
+  font-size: 12px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  outline: none;
   color: #fff;
   background-color: #04AA6D;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  padding: 5px 10px;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 .FAQ_btn:hover{

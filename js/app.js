@@ -15,7 +15,7 @@ function toggleVisibility(ids, containerId, TextId, event) {
     }
   });
 
-  // **Find the closest .FAQ_Question_Container_right manually**
+  // Find the closest .FAQ_Question_Container_right manually
   let currentContainer = event.target;
   while (currentContainer && !currentContainer.classList.contains("FAQ_Question_Container_right")) {
     currentContainer = currentContainer.parentElement;
@@ -63,16 +63,16 @@ function toggleVisibilityLeft(ids, containerId, TextId, event) {
     }
   });
 
-  // **Find the closest .FAQ_Question_Container_right manually**
+  // Find the closest .FAQ_Question_Container_right manually
   let leftcurrentContainer = event.target;
   while (leftcurrentContainer && !leftcurrentContainer.classList.contains("FAQ_Question_Container_left")) {
     leftcurrentContainer = leftcurrentContainer.parentElement;
   }
 
   if (leftcurrentContainer) {
-    // **Check if already expanded**
+    // Check if already expanded
     if (leftcurrentContainer.dataset.expanded === "true") {
-      // **Revert to original styles**
+      // Revert to original styles
       leftcurrentContainer.style.width = "";
       leftcurrentContainer.style.height = "";
       leftcurrentContainer.dataset.expanded = "false"; // Mark as collapsed
@@ -80,7 +80,7 @@ function toggleVisibilityLeft(ids, containerId, TextId, event) {
       text.style.margin = "-100%";
 
     } else {
-      // **Expand**
+      // Expand
       leftcurrentContainer.style.width = "90%";
       leftcurrentContainer.style.height = "90%";
       leftcurrentContainer.dataset.expanded = "true"; // Mark as expanded
