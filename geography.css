@@ -1,0 +1,86 @@
+
+.instructions{
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.Quiz_Question_Container{
+  position: relative;
+  width: 50%;
+  height: 75%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.Question{
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  text-align: center;
+  margin:0%;
+  padding: 0%;
+  font-size: 50px;
+}
+
+.AboveAnswer{
+  text-align: center;
+  font-family: "Roboto Bold";
+  font-size: 25px;
+  visibility: hidden;
+}
+
+.Answer{
+  font-family: "Roboto Light";
+  font-weight: bold;
+  font-weight: lighter;
+  font-size: 25px;
+  text-align: center;
+  padding: 0%;
+  margin-right: 40%;
+  margin-left: 40%;
+  visibility: hidden;
+  margin-top: 2%;
+  background: #e3facf;
+  width: 20%;
+  border-radius: 25px;
+  margin-bottom: -10%;
+}
+
+.AnswerImg{
+  margin-top: 3%;
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+}
+
+
+
+button{
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 40%;
+  margin-left: 40%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  width: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: auto;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover{
+}
+
+button:active{
+}
