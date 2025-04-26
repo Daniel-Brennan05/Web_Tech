@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Information Page (Pub reccomendations)</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="localstyle.css">
+  
+</head>
+<body>
+  <header>
+    <img src="abmedia/logonoback.png" alt="Napier Logo" class="Logo">
+    
+    <h1 class="pageTitle">Local Information Page</h1>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="pub2.html">Local Info</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+  </header>
+  <main>
+   
+   <div class="dropdown-sort">
+      
+        <audio controls>
+            <source src="abmedia/welcome.mp3">
+        </audio>  
+    <br>
+    <br>   
+    <label for="sort">Sort By: </label>    
+    <select id="sort">
+        <option value="pub-popularity-asc">Pub Popularity Ascending</option>
+        <option value="pub-popularity-des">Pub Popularity Descending</option>
+        <option value="pub-name-asc">Pub Name Ascending</option>
+        <option value="pub-name-des">Pub Name Descending</option>
+        <option value="pub-price-asc">Pub Price Ascending</option>
+        <option value="pub-price-des">Pub Price Descending</option>
+        <option value="pub-rating-asc">Pub Rating Ascending</option>
+        <option value="pub-rating-des">Pub Rating Descending</option>
+    </select> 
+   </div>
+   <br>
+   <div id="pub-sort">
+    <section class="pub" data-name="The Pear Tree" data-price="1" data-rating="4.2" data-popularity="3.5">
+        <h2><a href="pear.html">The Pear Tree</a></h2>
+        <img src="abmedia/peartree.png" alt="The Pear Tree" class="pub-image">
+        <p>The Pear Tree Quiz Nights are a lively weekly tradition full of quirky questions and friendly competition. Held in the cozy Pear Tree pub, they bring together locals and students for a fun, unpredictable evening of trivia.</p>
+        <p><strong>Quiz Night:</strong> Monday from 9.00pm -11.00pm, £1 entry fee and prize for a winner.</p>
+    </section>
+    
+    <section class="pub" data-name="Hanover Tap" data-price="0" data-rating="4.2" data-popularity="3.7">
+        <h2><a href="hanover.html">Hanover Tap</a></h2>
+        <img src="abmedia/hanover.png" alt="Hanover Tap" class="pub-image">
+        <p>Hanover Tap offers a fun mix of trivia and great prizes for winners and awarsd for best team name. The quiz is run by Goose's Quizzes, they provide fun and well organaised events, making it a popular choice for students and locals.</p>
+        <p><strong>Quiz Night:</strong> Monday from 7.30pm, free entry and bar vouchers for 1st and 2nd places.</p>
+    </section>
+    
+    <section class="pub" data-name="The Three Sisters" data-price="0" data-rating="4.1" data-popularity="2.5">
+        <h2><a href="sister.html">The Three Sisters</a></h2>
+        <img src="abmedia/threesister.png" alt="The Three Sisters" class="pub-image">
+        <p>The Three Sisters hosts quizes every Tuesday in their main bar. Events feature brain teasers, bonus challanges and killer questions. There is also an accumulator round, it starts at £50 and increases by £50 each week if not won. </p>
+        <p><strong>Quiz Night:</strong> Tuesdat from 8.30pm - 10:30pm, free enrty and £50 voucher for 1st place, 2nd and 3rd toys and sweets.</p>
+    </section>
+    
+    <section class="pub" data-name="The Newsroom" data-price="0" data-rating="4.3" data-popularity="3.3">
+        <h2><a href="newsroom.html">The Newsroom</a></h2>
+        <img src="abmedia/newsroom.png" alt="The Newsroom" class="pub-image">
+        <p>The Newsroom quiz night is hosted by Dr.Paul, its a quick event with classic trivia and quirky questions. Quiz covers genereal knowledge, music and vidual rounds. This created an amazing atmosphere and makes locals, students and newcomers to come back.</p>
+        <p><strong>Quiz Night:</strong> Thursday from 9.00pm, free entry and £2 per person to enter cash jackpot round, £50 cash prize for a first place and other prizes.</p>
+    </section>
+    
+    <section class="pub" data-name="The Spylaw" data-price="0" data-rating="4.4" data-popularity="4">
+        <h2><a href="spylaw.html">The Spylaw</a></h2>
+        <img src="abmedia/spylaw.png" alt="The Spylaw" class="pub-image">
+        <p>The Spylaw hosts a weekly pub quiz every Sunday and its run by Goose's Quizzes. Teams up to seven people can compete for the £30 gift voucher.</p>
+        <p><strong>Quiz Night:</strong> Sundayu from 7.30pm, free entry and £30 gift voucher for food and drinks for 1st palce and free nachos awarded for the best team name.</p>
+    </section>
+     
+    </div>    
+  </main>
+   
+  <script src="pub-sort.js"></script>
+</body>
+</html>

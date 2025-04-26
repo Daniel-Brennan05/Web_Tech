@@ -1,0 +1,101 @@
+body {
+  background-color: #FDF6E3;
+  font-family: roboto mono;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+
+.pub {
+  background-color: white;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.pub img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 10px 0;
+  display: block;
+}
+
+.pub img.pub-image {
+  width: 250px;        
+  height: auto;
+  float: left;          
+  margin: 10px 20px 10px 0; 
+  border-radius: 10px;
+}
+
+.pub-image-mid {
+  width: 100%;
+  max-width: 575px;
+  height: 400px;
+  display: block;
+  margin: 10px auto 20px auto;
+  margin-bottom: 20px;
+}
+
+.pub-image-sm {
+  float: left;
+  max-width: 350px;
+  height: 250px;
+  margin: 0 20px 10px 0;
+  margin-bottom: 20px;
+}
+
+.quiz-image-sm {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  display: block;
+  margin: 10px auto 20px auto;
+  margin-bottom: 20px;
+}
+
+.pub h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #222;
+}
+
+.pub p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.sort-container select {
+  padding: 5px;
+  font-size: 1em;
+}
+
+.dropdown-sort {
+  position: relative;
+  z-index: 10;
+}
+
+header {
+  z-index: 1;
+  position: relative;
+}
+
+h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
