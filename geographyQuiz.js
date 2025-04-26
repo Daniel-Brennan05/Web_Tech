@@ -43,7 +43,7 @@ function RevealAnswerMount(Img, Text, btn, Above, event){
   let paragraph = document.getElementById(Text);
   let button = document.getElementById(btn);
   let ab =document.getElementById(Above);
-  image.src = 'Mauna_kea.jpg'
+  image.src = 'Mauna_Kea.jpg'
   paragraph.style.marginBottom = '0%'
   paragraph.style.visibility = 'visible'
   button.style.visibility = 'hidden';
