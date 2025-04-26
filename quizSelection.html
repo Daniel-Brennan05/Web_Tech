@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Selection</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="quizSelect.css">
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- =========NAVIGATION/STANDARD ELEMENTS=========  -->
+
+<body>
+	<script src="quizSelect.js"></script>
+
+    <img src="Logo1.jpg" alt="Image" width="300">
+	
+	<div class="wrapper">
+	<ul class="navigation">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="about_us.html">About Us</a></li>
+		<li><a href='quizSelection.html'>Quiz Selection</a></li>
+		<li><a href="pub2.html">Local Info</a></li>
+		<li><a href="FAQ.html">FAQ</a></li>
+	</ul>
+    </div>
+
+<!-- =========Header=========  -->
+<header class="header">
+	<h1>Choose Your Quiz!</h1>
+	</header>
+
+<!--
+5 images, under each image 
+1 play button(takes you to quiz document). 
+1 drop down button that shows a description
+Make one then duplicate the base and edit for each quiz.
+-->
+<div class="quiz-container">
+
+<!-- BOX 1 -->
+<div class="quiz-card">
+	
+	<div class="img-wrapper">
+  	<img src="women_pic.png" alt="Iconic Women Quiz" />
+	</div>
+  
+	<h1 class="quiz-title">Iconic Women</h1>
+	
+	<div class="button-group">
+    <button class="quiz-btn" onclick="window.location.href='women_quiz.html'">Play Now!</button>
+    <button class="toggle-btn quiz-btn">Learn More ▼</button>
+	<div class="quiz-description">
+    <p>Celebrate the iconic women in STEM subjects with this fun quiz!</p>
+  </div>
+ 	</div>
+	
+</div>
+	
+<!-- BOX 2 -->
+<div class="quiz-card">
+	
+	<div class="img-wrapper">
+  	<img src="spiderman.jpg" alt="Marvel Quiz" />
+	</div>
+  
+	<h1 class="quiz-title">Marvel</h1>
+	
+	<div class="button-group">
+    <button class="quiz-btn" onclick="window.location.href='marvelQuiz.html'">Play Now!</button>
+    <button class="toggle-btn quiz-btn">Learn More ▼</button>
+	<div class="quiz-description">
+    <p>Step into the Marvel Cinematic Universe with this fun packed trivia!</p>
+    </div>
+ 	</div>
+	
+</div>
+	
+<!-- BOX 3 -->
+<div class="quiz-card">
+	
+	<div class="img-wrapper">
+  	<img src="quiz1.png.jpg" alt="Dog Quiz" />
+	</div>
+  
+	<h1 class="quiz-title">Dogs</h1>
+	
+	<div class="button-group">
+    <button class="quiz-btn" onclick="window.location.href='Elsasquiz.html'">Play Now!</button>
+    <button class="toggle-btn quiz-btn">Learn More ▼</button>
+	<div class="quiz-description">
+    <p>How well do you know the UK's favourite pet?</p>
+    </div>
+ 	</div>
+	
+</div>
+	
+<!-- BOX 4 -->
+<div class="quiz-card">
+	
+	<div class="img-wrapper">
+  	<img src="globe.jpg" alt="Globe" />
+	</div>
+  
+	<h1 class="quiz-title">Geography</h1>
+	
+ 	<div class="button-group">
+    <button class="quiz-btn" onclick="window.location.href='geography.html'">Play Now!</button>
+    <button class="toggle-btn quiz-btn">Learn More ▼</button>
+	<div class="quiz-description">
+    <p>Do you know the world as well as you think? Find out here!</p>
+    </div>
+ 	</div>
+	
+</div>
+ 
+<!-- BOX 5 -->
+<div class="quiz-card">
+	
+	<div class="img-wrapper">
+  	<img src="ronaldo.png" alt="Football" />
+	</div>
+  
+	<h1 class="quiz-title">Football</h1>
+	
+	<div class="button-group">
+    <button class="quiz-btn" onclick="window.location.href='football.html'">Play Now!</button>
+    <button class="toggle-btn quiz-btn">Learn More ▼</button>
+	<div class="quiz-description">
+    <p>Test your ball knowledge with this football-themed quiz!</p>
+    </div>
+ 	</div>
+	
+</div>
+</div>
+
+<footer class="footer">
+
+</footer>  
+
+</body>
+</html>
