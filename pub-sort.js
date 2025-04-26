@@ -1,6 +1,3 @@
-// Java script for sorting the pub names, rating, price and popularioty
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
 const sortSelect = document.getElementById('sort');
 const pubSortContainer = document.getElementById('pub-sort');
 
