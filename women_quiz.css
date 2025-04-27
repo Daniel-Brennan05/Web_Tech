@@ -1,3 +1,4 @@
+// styling the 'answers' button
 .button {
   display: inline-block;
   padding: 15px 25px;
@@ -12,28 +13,33 @@
   box-shadow: 0 9px #999;
 }
 
+// changing the button colour when cursor hovers over
 .button:hover {
   background-color: #f2870d;
 }
 
+// adding a colour change when the button is pressed 
 .button:active {
   background-color: #f2870d;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
+// layout to put the button in centre of page
 .center-container {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
+// styling the quiz questions
 .quiz-section p {
   margin-bottom: 15px;
   font-size: 18px;
   text-align: center;
 }
 
+// styling the image for quiz
 .quiz-image {
   display: block;
   margin: 30px auto;
