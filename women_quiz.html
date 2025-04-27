@@ -7,10 +7,12 @@
 </head>
 
 <body class="main">
+  // adding header, logo, page title and navigation menu
   <header>
   <img src="Logo1_no_background.png" alt="Image" class="Logo">
   <h1 class="pageTitle">Iconic Women</h1>
 
+  // linking pages for the navigation menu  
   <ul class="navigation">
     <li><a href="index.html">Home</a></li>
     <li><a href="about_us.html">About Us</a></li>
@@ -21,9 +23,10 @@
 </header>
 
   <main>
-	<link rel="stylesheet" href="women_quiz.css">
+	<link rel="stylesheet" href="women_quiz.css"> // adding another stylesheet that is specific to this quiz 
     <img src="women_pic.png" alt="Quiz Banner" class="quiz-image">
 
+    // adding quiz questions/content
     <div class="quiz-section">
       <p><strong>1.</strong> Which woman is often known as the ‘First Computer Programmer’?</p>
       <p><strong>2.</strong> Marie Curie is the only individual to win two Nobel Prizes in two different science categories. In which year did she win her first?</p>
@@ -36,11 +39,14 @@
       <p><strong>9.</strong> Which iconic woman is also known as ‘The Lady with the lamp’?</p>
       <p><strong>10.</strong> Emmeline Pankhurst was a founding member of which historical group?</p>
     </div>
-
+    
+    // creating button named 'answers' and when clicked it will show the quiz answers
     <div class="center-container">
       <button class="button" onclick="showMessage()">Answers</button>
     </div>
   </main>
+  
+     // linking external javascript file 
      <script src="women_quiz.js"></script> 
 </body>
 </html>
