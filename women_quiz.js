@@ -1,5 +1,7 @@
- function showMessage() {
-      alert(
+// Defining function named 'showMessage'
+function showMessage() {
+// Using 'alert' to display a pop up message to show quiz answers when a button is clicked
+      alert( 
         "Quiz Answers:\n\n" +
         "1. Ada Lovelace\n" +
         "2. 1903\n" +
