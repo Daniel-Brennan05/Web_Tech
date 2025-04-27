@@ -1,3 +1,4 @@
+//stores quesitons
 const quizData = [
     {
       question: "Which football club won Champions League last year?",
@@ -50,19 +51,19 @@ const quizData = [
       answer: "Santiago Bernabéu"
     },
   ];
-  
+  // used for question text and answer buttons
   const questionElement = document.getElementById("question");
   const optionsElement = document.getElementById("options");
-  const submitButton = document.getElementById("submit");
-  
+  // hold num of question and correct answers
   let currentQuestion = 0;
   let score = 0;
-  
+  // display question
   function showQuestion() {
     const question = quizData[currentQuestion];
     questionElement.innerText = question.question;
   
     optionsElement.innerHTML = "";
+    //clickable button for each answer
     question.options.forEach(option => {
       const button = document.createElement("button");
       button.innerText = option;
@@ -74,25 +75,25 @@ const quizData = [
   function selectAnswer(e) {
     const selectedButton = e.target;
     const answer = quizData[currentQuestion].answer;
-  
+  //checks for correct answer
     if (selectedButton.innerText === answer) {
       score++;
     }
   
     currentQuestion++;
-  
+  //used to display next question
     if (currentQuestion < quizData.length) {
       showQuestion();
     } else {
       showResult();
     }
   }
-  
+  // outputs the final result
   function showResult() {
     quiz.innerHTML = `
       <h1> Thank you for completing the quiz!</h1>
       <p>Your score is: ${score}/${quizData.length}</p>
     `;
   }
-  
+  //shows the quesiton when the page is accessed
   showQuestion();
