@@ -1,34 +1,40 @@
+// container for team members
 .team-gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 40px;
 }
-	
+
+// styling for induvidual team member
 .team-member {
   text-align: center;
   font-size: 18px;
   max-width: 200px;
 }
-		
+
+// styling for team member images
 .team-member img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-	
+
+// styling for team member names under each image
 .member-name {
   margin-top: 10px;
   font-weight: bold;
   font-size: 18px;
 }
-	
+
+// paragraph styling under the about us section
 .about-us p {
   margin-bottom: 15px;
   font-size: 18px;
   text-align: center;
 }
-	
+
+// styling the intro message to make it different than main paragraph
 .intro {
   margin-bottom: 10px;
   font-weight: bold;
