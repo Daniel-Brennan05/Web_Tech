@@ -1,3 +1,4 @@
+/* Styling body of the page*/
 body {
   background-color: #FDF6E3;
   font-family: roboto mono;
@@ -10,7 +11,7 @@ main {
   padding: 20px;
 }
 
-
+/* White container for each pub */
 .pub {
   background-color: white;
   border: 1px solid #222;
@@ -19,7 +20,7 @@ main {
   margin-bottom: 20px;
   overflow: hidden;
 }
-
+/* image styling that are inside pub*/
 .pub img {
   max-width: 100%;
   height: auto;
@@ -27,7 +28,7 @@ main {
   margin: 10px 0;
   display: block;
 }
-
+/* local info page pub to float left */
 .pub img.pub-image {
   width: 250px;        
   height: auto;
@@ -35,7 +36,7 @@ main {
   margin: 10px 20px 10px 0; 
   border-radius: 10px;
 }
-
+/* style for big pub image */
 .pub-image-mid {
   width: 100%;
   max-width: 575px;
@@ -44,7 +45,7 @@ main {
   margin: 10px auto 20px auto;
   margin-bottom: 20px;
 }
-
+/* style for small pub image */
 .pub-image-sm {
   float: left;
   max-width: 350px;
@@ -52,7 +53,7 @@ main {
   margin: 0 20px 10px 0;
   margin-bottom: 20px;
 }
-
+/* style for big quiz image */
 .quiz-image-sm {
   width: 100%;
   max-width: 400px;
@@ -61,40 +62,40 @@ main {
   margin: 10px auto 20px auto;
   margin-bottom: 20px;
 }
-
+/* Styling the heading2 for pub */
 .pub h2 {
   margin-top: 0;
   font-size: 1.5em;
   color: #222;
 }
-
+/* Styling the para for pub */
 .pub p {
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 10px;
   color: #222;
 }
-
+/* styling select inside cont */
 .sort-container select {
   padding: 5px;
   font-size: 1em;
 }
-
+/* positopm of sort box */
 .dropdown-sort {
   position: relative;
   z-index: 10;
 }
-
+/* styling position*/
 header {
   z-index: 1;
   position: relative;
 }
-
+/* styling the link so its not blue */
 h2 a {
   text-decoration: none;
   color: inherit;
 }
-
+/* Styling the link to underline when mouse is howered over */
 h2 a:hover {
   text-decoration: underline;
 }
